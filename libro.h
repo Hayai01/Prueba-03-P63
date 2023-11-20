@@ -10,7 +10,7 @@ private:
     int paginas;
 public:
     Libro();
-    Libro(int numAutores, string publicacion, string titulo);
+    Libro(int NumAutores,string publicacion,string titulo);
     int getPaginas() const;
     void setPaginas(int newPaginas);
     string obtenerReferencia();

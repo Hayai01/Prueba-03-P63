@@ -15,7 +15,7 @@ string Articulo::obtenerReferencia()
     return Documento::obtenerReferencia() +
             revista + ", " +
             this->publicacion + ", En Journal: " +
-            (this->journal ? "Si" : "No");
+            (this->journal ? "Si" : "No"  ) + "\n";
 }
 
 Articulo::Articulo()

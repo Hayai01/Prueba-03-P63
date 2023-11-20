@@ -3,6 +3,8 @@
 
 #include <string>
 #include <vector>
+#include <iostream>
+
 
 using namespace std;
 
@@ -10,15 +12,16 @@ using namespace std;
 class Documento
 {
 private:
-    vector <string> autores;
+    vector<string> autores;
     int numAutores;
+
 protected:
     string publicacion;
 public:
     Documento();
     Documento(int numAutores);
     bool agregarAutor(string nombre);
-    string obtenerReferencia();
+    virtual string obtenerReferencia();
     const vector<string> &getAutores() const;
 };
 

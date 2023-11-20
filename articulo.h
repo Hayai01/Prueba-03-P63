@@ -15,7 +15,7 @@ public:
     bool getJournal() const;
     void setJournal(bool newJournal);
 
-    string obtenerReferencia();
+    string obtenerReferencia() ;
 };
 
 #endif // ARTICULO_H

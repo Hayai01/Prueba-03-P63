@@ -1,5 +1,19 @@
 #include "libro.h"
 
+
+Libro::Libro()
+{
+
+}
+
+Libro::Libro(int numAutores, string publicacion, string titulo):
+    Documento(numAutores),
+    titulo(titulo)
+{
+    this->publicacion = publicacion;
+}
+
+
 int Libro::getPaginas() const
 {
     return paginas;
@@ -15,17 +29,6 @@ string Libro::obtenerReferencia()
     return Documento::obtenerReferencia() +
             titulo + ", " +
             this->publicacion + ", " +
-            to_string(paginas) + " pags. ";
+            to_string(paginas) + " pags. " + "\n";
 }
 
-Libro::Libro()
-{
-
-}
-
-Libro::Libro(int numAutores, string publicacion, string titulo):
-    Documento(numAutores),
-    titulo(titulo)
-{
-    this->publicacion = publicacion;
-}
